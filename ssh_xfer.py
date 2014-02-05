@@ -1,11 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # ****************************************#
 #  Programa de Transferencia de Archivos  #
 #       Ing. Kennedy Sanchez              #
 #        (Security + MGP + PS. Auditor)   #
 #     @ksanchez_cld on twitter            #  
 # **************************************** 	
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+
 import paramiko
 import os
 from sys import stdin
