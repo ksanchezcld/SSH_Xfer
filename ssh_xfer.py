@@ -20,7 +20,7 @@ cnx = paramiko.Transport((srv, prt))
 cnx.connect(username = usr, password = clv)
 
 canal = cnx.open_session()
-canal.exec_command('mkdir -p /tmp/dir/ && cd /tmp/dir && uptime >>/tmp/dir/uptm.log && hostname >/tmp/dir/host.log')
+canal.exec_command('mkdir -p /tmp/dir/ && cd /tmp/dir && uptime >>/tmp/dir/uptm.log && hostname >/tmp/dir/host.log && tar -cvzf /tmp/dir/files.tar.gz /tmp/dir/*.log')
 
 salida = canal.makefile('rb', -1).readlines()
 if salida:
